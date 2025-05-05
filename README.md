@@ -42,11 +42,6 @@ Each notebook includes detailed preprocessing, training logic, evaluation metric
  
 ## Installation Requirements
 
-
-Sure! Here's the same list, formatted using backticks (`) so it's ready to be pasted directly into a **GitHub `README.md\` file\*\*:
-
----
-
 To run the notebooks in this repository, you will need the following packages:
 
 * `numpy`
