@@ -127,6 +127,7 @@ Useful Links for installing Jupyter Notebook:
 - https://www.youtube.com/watch?v=9V7AoX0TvSM (Windows)
 
 It's recommended to run this notebook in a conda environment to avoid dependency conflicts and to ensure smooth execution.
+Also, you will need a GPU to run the notebooks. It is recommended to have a Google Colab Account (perhaps multiple accounts) for this purpose.
 <h4> Conda Environment Setup </h4>
 <ul> 
    <li> Install conda </li>
