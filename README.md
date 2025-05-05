@@ -23,7 +23,7 @@ Dataset folders used in the notebooks:
 
 1. [Introduction](#introduction)
 2. [Installation Requirements](#installation-requirements)
-3. [Project Structure](#project-overview)
+3. [Project Overview](#project-overview)
 4. [Data](#data)
 5. [Training and Evaluation](#training-and-visualization)
 6. [Lessons](#lessons)
