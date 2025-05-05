@@ -1,6 +1,4 @@
-# Deep-Learning-Project-Group-17
-
-# Hi, We are Haris and Khubaib! 👋
+# Hi, We are Haris and Khubaib! Welcome to our Deep Learing Project 👋
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/) 
 
