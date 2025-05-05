@@ -6,16 +6,6 @@
 
 # Deep Learning Project
 
-This repository contains four Jupyter Notebooks implementing and comparing deep learning approaches for automated analysis of chest X-ray images. The models focus on segmenting lung regions and classifying the presence of Tuberculosis (TB) using a combination of CNN-based and Transformer-based architectures. Specifically, the repository includes:
-
-1. **SENet** – A SEResNet50-based classifier trained directly on preprocessed raw chest X-rays.
-2. **UNet++** – A segmentation model that isolates lung regions for cleaner downstream classification.
-3. **UNet++ + SENet** – A two-stage pipeline where UNet++ segments lung areas, followed by SENet classification on the segmented output for improved diagnostic performance.
-4. **Swin Transformer** – A Vision Transformer model applied to chest X-ray classification to explore attention-based learning.
-
-Each notebook includes detailed preprocessing, training logic, evaluation metrics (Dice, IoU, classification reports), and GradCAM++ visualizations to interpret the model’s decision-making. This project demonstrates the effectiveness of combining segmentation and classification, and explores the use of Transformers in medical imaging.
-
-
 The repository contains the following files:
 
 * **UNetPretrained.ipynb** – Trains a UNet++ model for lung segmentation.
@@ -28,21 +18,8 @@ The repository contains the following files:
 Dataset folders used in the notebooks:
 
 * **Image-Segmentation/** – X-ray images and masks for segmentation.
-* **Dataset2/**, **Dataset3/**, **Dataset4/** – X-ray images for TB/Normal classification.
+* **Dataset2/**, **Dataset3/**, **Dataset4/** – X-ray images for TB classification.
 
-The two Jupyter Notebooks in this repository explore two major Machine Learning algorithms (K-Nearest Neighbours and Regression Trees), with a particular focus on accurately predicting the motion of micro-robots in a complex environment with onstacles. The notebooks are structured to provide a comprehensive understanding of these algorithms, and include practical implementations, visualizations, and model evaluations. <br> 
-
-The AI_Project folder contains the following files:
-- A KNN.ipynb file (Jupyter Notebook) that contains all the code regarding the KNN part of the assignment including text blocks explaining portions of the code
-- A corresponding KNN.py file
-- A RegressionTree.ipynb file (Jupyter Notebook) that contains all the code regarding the Regression Tree part of the assignment including text blocks explaining portions of the code
-- A corresponding RegressionTree.py file
-- three .png files that are screenshots of the plots in the KNN Jupyter Notebook
-- two .png files that are screenshots of the plots in the Regression Tree Jupyter Notebook
-- a 1200-second video recording `(training_data.mp4)` of the robot's movement within the wooden box environment.
-- a text file  `(training_data.txt)`containing the robot's coordinates
-- a test video `(test01.mp4)` 
-- a test txt file `(test01.txt)` 
 
 ## Table of Contents
 
@@ -56,35 +33,94 @@ The AI_Project folder contains the following files:
    
 ## Introduction
 
-K-Nearest Neighbors (KNN) is a simple, non-parametric classification and regression algorithm. It works by finding the k closest training examples to a given test point and making predictions based on these neighbors. For classification, KNN assigns the class most common among the neighbors, while for regression, it averages the values of the neighbors. <br>
+This project includes implementing and comparing deep learning approaches for automated analysis of chest X-ray images. The models focus on segmenting lung regions and classifying the presence of Tuberculosis (TB) using a combination of CNN-based and Transformer-based architectures. Specifically, we train the following models:
 
-A regression tree is a type of decision tree used for predicting continuous outcomes. It splits the data into subsets based on feature values, aiming to minimize variance within each subset. The process continues recursively, creating a tree-like structure where each node represents a decision based on a feature, and each leaf node represents a predicted value. Regression trees are useful for capturing non-linear relationships and interactions between features, but they can be prone to overfitting if not properly pruned or regularized. <br>
+1. **SENet** – A SEResNet50-based classifier trained directly on preprocessed raw chest X-rays.
+2. **UNet++** – A segmentation model that isolates lung regions for cleaner downstream classification.
+3. **UNet++ + SENet** – A two-stage pipeline where UNet++ segments lung areas, followed by SENet classification on the segmented output for improved diagnostic performance.
+4. **Swin Transformer** – A Vision Transformer model applied to chest X-ray classification to explore attention-based learning.
 
- This assignment provides a clear and concise example of how to implement the KNN and Regression Tree algorithms from scratch using Python.
+Each notebook includes detailed preprocessing, training logic, evaluation metrics (Dice, IoU, classification reports), and GradCAM++ visualizations to interpret the model’s decision-making. This project demonstrates the effectiveness of combining segmentation and classification, and explores the use of Transformers in medical imaging.
  
 ## Installation Requirements
 
-To run the both the notebooks, you will need the following packages:
-- numpy
-- pandas
-- matplotlib
-- scikit-learn
+
+Sure! Here's the same list, formatted using backticks (`) so it's ready to be pasted directly into a **GitHub `README.md\` file\*\*:
+
+---
+
+To run the notebooks in this repository, you will need the following packages:
+
+* `numpy`
+* `matplotlib`
+* `seaborn`
+* `opencv-python`
+* `pillow`
+* `torch`
+* `torchvision`
+* `timm`
+* `albumentations`
+* `scikit-learn`
+* `tqdm`
+* `segmentation-models-pytorch`
+* `grad-cam`
+* `torchsummary`
 
 You can install these packages using pip:
 
 ```bash
- pip install numpy
+pip install numpy
 ```
+
 ```bash
- pip install pandas
+pip install matplotlib
 ```
+
 ```bash
- pip install matplotlib 
+pip install seaborn
 ```
+
 ```bash
- pip install scikit-learn
+pip install opencv-python
 ```
-After installing the libraries, simply run the 'Imports' code block to enable their usage in the file.
+
+```bash
+pip install pillow
+```
+
+```bash
+pip install torch torchvision
+```
+
+```bash
+pip install timm
+```
+
+```bash
+pip install albumentations
+```
+
+```bash
+pip install scikit-learn
+```
+
+```bash
+pip install tqdm
+```
+
+```bash
+pip install segmentation-models-pytorch
+```
+
+```bash
+pip install grad-cam
+```
+
+```bash
+pip install torchsummary
+```
+
+After installing the required libraries, simply run the **"Imports"** cell in each notebook to begin.
 
 Useful Links for installing Jupyter Notebook:
 - https://youtube.com/watch?v=K0B2P1Zpdqs  (MacOS)
