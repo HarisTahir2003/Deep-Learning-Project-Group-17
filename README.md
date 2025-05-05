@@ -15,6 +15,21 @@ This repository contains four Jupyter Notebooks implementing and comparing deep 
 
 Each notebook includes detailed preprocessing, training logic, evaluation metrics (Dice, IoU, classification reports), and GradCAM++ visualizations to interpret the model’s decision-making. This project demonstrates the effectiveness of combining segmentation and classification, and explores the use of Transformers in medical imaging.
 
+
+The repository contains the following files:
+
+* **UNetPretrained.ipynb** – Trains a UNet++ model for lung segmentation.
+* **UNet.pth** – Saved weights of the trained UNet++ model.
+* **SEResNet50.ipynb** – Classifies TB from chest X-rays using SEResNet50.
+* **SEResNet50.pth** – Saved weights of the trained SEResNet50 model.
+* **UNet\_SENet\_Pipeline.ipynb** – Combines UNet++ and SEResNet50 for segmentation-based classification.
+* **SwinTransformer.ipynb** – Applies a Swin Transformer for TB classification.
+
+Dataset folders used in the notebooks:
+
+* **Image-Segmentation/** – X-ray images and masks for segmentation.
+* **Dataset2/**, **Dataset3/**, **Dataset4/** – X-ray images for TB/Normal classification.
+
 The two Jupyter Notebooks in this repository explore two major Machine Learning algorithms (K-Nearest Neighbours and Regression Trees), with a particular focus on accurately predicting the motion of micro-robots in a complex environment with onstacles. The notebooks are structured to provide a comprehensive understanding of these algorithms, and include practical implementations, visualizations, and model evaluations. <br> 
 
 The AI_Project folder contains the following files:
