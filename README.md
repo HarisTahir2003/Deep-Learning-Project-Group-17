@@ -197,9 +197,10 @@ An AI project such as the one implemented here, involved many challenges, includ
 
 
 ## Screenshots
-<h3> K-Nearest Neighbour (KNN) </h3>
-<h4> 1. This image shows how the value of the Root-Mean-Square-Error changes for increasing values of k. Further explanation of the results of the plot are explained in detail in the Jupyter Notebook. </h4>
-<img src="pic11.png" width="450px"> <br> 
+<h3> Swin Transformer </h3>
+<h4> This image shows the confusion matrix of the swin transformer model on test dataset. </h4>
+<img src="pic12.png" width="450px">
+ <br> 
 
 <h4> 2. This image shows the trajectory of the actual path of the micro-robot along with the trajectory predicted by the KNN algorithm <strong> implemented from scratch </strong>. You can change the value of 'start_second' in the code to compare the two trajectories for different six-second sets of times.  </h4>
 <img src="pic12.png" width="450px"> <br> 
