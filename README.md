@@ -150,10 +150,7 @@ In this phase, we developed a **SEResNet50** model — a Squeeze-and-Excitation 
 
 #### 4. **Final Release**
 
-We introduced a two-stage pipeline, where the UNet++ model first segmented the lungs, followed by classification using the SEResNet50 model. This integrated approach achieved an impressive 99% accuracy. Additionally, we experimented with a Swin Transformer, exploring transformer-based architectures for medical image classification. The Swin Transformer yielded strong performance, achieving a test accuracy of 96.28% and a test loss of 0.2156. The detailed classification report showed high precision and recall across both classes:
-Normal: Precision = 0.9732, Recall = 0.9500, F1-score = 0.9614 (n = 420)
-TB: Precision = 0.9533, Recall = 0.9750, F1-score = 0.9640 (n = 440)
-Overall, the Swin Transformer achieved a macro average F1-score of 0.9627, indicating its effectiveness as a transformer-based alternative for TB classification.
+We introduced a two-stage pipeline, where the UNet++ model first segmented the lungs, followed by classification using the SEResNet50 model. This integrated approach achieved an impressive 99% accuracy. Additionally, we experimented with a Swin Transformer, exploring transformer-based architectures for medical image classification. The Swin Transformer yielded strong performance, achieving a test accuracy of 96.28% and a test loss of 0.2156. Overall, the Swin Transformer achieved a macro average F1-score of 0.9627, indicating its effectiveness as a transformer-based alternative for TB classification.
 
 #### 5. **Research Paper**
 
@@ -162,38 +159,23 @@ We concluded the project by writing a comprehensive **research paper** detailing
 
 ## Data
 
-Training Data
-  - A 1200-second video recording `(training_data.mp4)` of the robot's movement within the wooden box environment. This video is captured at 30 frames per second (fps).
-  - A text file  `(training_data.txt)`containing the robot's coordinates, with 30 values recorded for each second (since video is 30 fps).
+Our database consisted of the following four datasets. All of them were sourced from kaggle and are publicly available at the following links:
 
-* Testing Data
-  - A test video `(test01.mp4)`, 60 seconds long recorded at 30 fps.
-  - A test txt file `(test01.txt)` following the same format as the `training_data.txt` file.
+- Dataset 2: https://www.kaggle.com/datasets/tawsifurrahman/tuberculosis-tb-chest-xray-dataset
+- Dataset 3: https://www.kaggle.com/datasets/usmanshams/tbx-11
+- Dataset 4: https://www.kaggle.com/datasets/pritpal2873/chest-x-ray-dataset-4-categories
+
+- Image Segmentation Dataset: https://www.kaggle.com/datasets/iamtapendu/chest-x-ray-lungs-segmentation
+
 
 
 ## Training and Visualization
 
-The entire training process alongside the maths involved is explained in detail in the jupyter notebook. 
+The entire training process alongside the relevant evaluations and visualizations are explained in detail in the jupyter notebook. 
 
 ## Lessons
 
-An AI project such as the one implemented here, involved many challenges, including:
 
-1. **Handling Time Series Data:**
-   - **Challenge:** Working with time series data requires careful consideration of the temporal order and dependencies between observations. This can be tricky when predicting future values based on past data.
-   - **Solution:** To manage this, I implemented a lookback mechanism, which involved using previous observations to predict future values. For both KNN and Regression Tree models, this allowed me to capture temporal dependencies effectively.
-
-2. **Implementing KNN from Scratch:**
-   - **Challenge:** Building the KNN algorithm from scratch without relying on libraries like scikit-learn involved creating functions for distance calculation, finding nearest neighbors, and handling ties in predictions.
-   - **Solution:** I wrote custom functions for Euclidean distance and nearest neighbor selection. To handle ties, I implemented a mechanism to decrement k until a clear prediction was obtained, ensuring robust and accurate results.
-
-3. **Evaluating Model Performance:**
-   - **Challenge:** Choosing the right value of k for the KNN model and the lookback size for the Regression Tree model required extensive evaluation. The performance needed to be assessed using metrics like RMSE.
-   - **Solution:** I plotted RMSE values against different k values and lookback sizes to identify the optimal parameters. This involved iterating through various values and analyzing trends to select the best-performing configurations.
-
-4. **Handling Model Complexity and Overfitting:**
-   - **Challenge:** With increasing model complexity (e.g., higher k values or longer lookback periods), there was a risk of overfitting, where the model might perform well on training data but poorly on unseen data.
-   - **Solution:** I monitored performance metrics across various configurations and chose parameters that balanced model complexity and generalization. For KNN, I observed the trend in RMSE with varying k values, and for Regression Trees, I tested different lookback sizes to find the optimal trade-off.
 
 
 ## Screenshots
