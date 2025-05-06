@@ -150,7 +150,10 @@ In this phase, we developed a **SEResNet50** model — a Squeeze-and-Excitation 
 
 #### 4. **Final Release**
 
-We introduced a **two-stage pipeline**, where the UNet++ model first segmented the lungs, followed by classification using the SEResNet50 model. This integrated approach also achieved **99% accuracy**. Additionally, we experimented with a **Swin Transformer**, exploring transformer-based architectures for medical image classification.
+We introduced a two-stage pipeline, where the UNet++ model first segmented the lungs, followed by classification using the SEResNet50 model. This integrated approach achieved an impressive 99% accuracy. Additionally, we experimented with a Swin Transformer, exploring transformer-based architectures for medical image classification. The Swin Transformer yielded strong performance, achieving a test accuracy of 96.28% and a test loss of 0.2156. The detailed classification report showed high precision and recall across both classes:
+Normal: Precision = 0.9732, Recall = 0.9500, F1-score = 0.9614 (n = 420)
+TB: Precision = 0.9533, Recall = 0.9750, F1-score = 0.9640 (n = 440)
+Overall, the Swin Transformer achieved a macro average F1-score of 0.9627, indicating its effectiveness as a transformer-based alternative for TB classification.
 
 #### 5. **Research Paper**
 
