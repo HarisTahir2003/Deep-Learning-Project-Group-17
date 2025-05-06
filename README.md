@@ -26,8 +26,7 @@ Dataset folders used in the notebooks:
 3. [Project Overview](#project-overview)
 4. [Data](#data)
 5. [Training and Evaluation](#training-and-visualization)
-6. [Lessons](#lessons)
-7. [Screenshots](#screenshots)
+6. [Screenshots](#screenshots)
    
 ## Introduction
 
@@ -172,10 +171,6 @@ Our database consisted of the following four datasets. All of them were sourced 
 ## Training and Visualization
 
 The entire training process alongside the relevant evaluations and visualizations are explained in detail in the jupyter notebook. 
-
-## Lessons
-
-
 
 
 ## Screenshots
