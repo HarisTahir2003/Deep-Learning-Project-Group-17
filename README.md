@@ -174,24 +174,17 @@ The entire training process alongside the relevant evaluations and visualization
 
 
 ## Screenshots
-<h3> Swin Transformer </h3>
-<h4> This image shows the confusion matrix of the swin transformer model on test dataset. </h4>
+
+<h4> 1. This image shows eight random samples of Chest X-ray images from the Image Segmentation dataset, with their masks ovelaid on top of the grayscale images. The masks are shaded red for better visualization.  </h4>
+<img src="Pic1.png" width="450px"> <br> 
+
+<h4> 2. This image shows the confusion matrix when the SEResNet50 classifier is evaluated on the test dataset containing raw Chest X-ray images. </h4>
+<img src="Pic2.png" width="450px"> <br> 
+
+<h3> 3. Swin Transformer </h3>
+<h4> This image shows the confusion matrix when the Swin Transformer model is evaluated on the test dataset. </h4>
 <img src="SwinTransformer_confusion_matrix.png" width="450px">
  <br> 
-
-<h4> 2. This image shows the trajectory of the actual path of the micro-robot along with the trajectory predicted by the KNN algorithm <strong> implemented from scratch </strong>. You can change the value of 'start_second' in the code to compare the two trajectories for different six-second sets of times.  </h4>
-<img src="pic12.png" width="450px"> <br> 
-
-<h4> 3. This image shows the trajectory of the actual path of the micro-robot along with the trajectory predicted by the KNN algorithm <strong> implemented using the scikit-learn library </strong>. You can change the value of 'start_second' in the code to compare the two trajectories for different six-second sets of times.  </h4>
-<img src="pic13.png" width="450px"> <br> 
-
-<h3> Regression Tree </h3>
-<h4> 1. This image shows how the value of the Root-Mean-Square-Error changes for increasing values of Lookback Size. Further explanation of the results of the plot are explained in detail in the Jupyter Notebook. </h4>
-<img src="pic21.png" width="450px"> <br> 
-
-<h4> 2. This image shows the trajectory of the actual path of the micro-robot along with the trajectory predicted by the KNN algorithm implemented using the scikit-learn library. You can change the value of 'start_second' in the code to compare the two trajectories for different six-second sets of times. </h4>
-<img src="pic22.png" width="450px"> <br> 
-
  
 ## License
 
