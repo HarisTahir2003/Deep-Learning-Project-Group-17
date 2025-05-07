@@ -7,11 +7,10 @@
 The repository contains the following files:
 
 * **UNetPretrained.ipynb** – Trains a UNet++ model for lung segmentation.
-* **UNet.pth** – Saved weights of the trained UNet++ model.
 * **SEResNet50.ipynb** – Classifies TB from chest X-rays using SEResNet50.
-* **SEResNet50.pth** – Saved weights of the trained SEResNet50 model.
 * **UNet\_SENet\_Pipeline.ipynb** – Combines UNet++ and SEResNet50 for segmentation-based classification.
 * **SwinTransformer.ipynb** – Applies a Swin Transformer for TB classification.
+* **Research Paper**
 
 Dataset folders used in the notebooks:
 
